@@ -4,6 +4,10 @@ h1, h2, h3, h4, ul, p, body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -12,7 +16,6 @@ img {
 .page {
   font-size: 16px;
   font-family: "Lato", Arial, sans-serif;
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -259,6 +262,33 @@ img {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.ingredients-card:hover {
+  -webkit-box-shadow: 0 0 25px rgba(255, 153, 0, 0.3);
+          box-shadow: 0 0 25px rgba(255, 153, 0, 0.3);
+}
+
+.ingredients-card:hover::before {
+  opacity: 0.3;
+}
+
+.ingredients-card::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff9900;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .ingredients-card__background {
@@ -304,6 +334,21 @@ img {
           justify-content: space-between;
 }
 
+.ingredients-card__image:hover .ingredients-card__image-img:first-child {
+  -webkit-transform: translateX(265%) rotate(360deg);
+          transform: translateX(265%) rotate(360deg);
+}
+
+.ingredients-card__image:hover .ingredients-card__image-img:last-child {
+  -webkit-transform: translateX(-265%) rotate(-360deg);
+          transform: translateX(-265%) rotate(-360deg);
+}
+
+.ingredients-card__image-img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 .menu__inner {
   position: relative;
   display: -webkit-box;
@@ -336,7 +381,13 @@ img {
   font-size: 36px;
   font-weight: 400;
   text-align: center;
+  -webkit-transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s;
   cursor: pointer;
+}
+
+.menu-card__title:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .menu-card__title:hover::after {
@@ -360,10 +411,9 @@ img {
 }
 
 .menu-card__content {
-  max-height: 300px;
   overflow: hidden;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .menu-card__item {
@@ -428,6 +478,8 @@ img {
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .reviews-card__title {

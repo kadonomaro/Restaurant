@@ -18,11 +18,30 @@
     padding: 85px;
     text-align: center;
     box-sizing: border-box;
+    transition: box-shadow 0.3s;
+    &:hover {
+        box-shadow: 0 0 25px rgba($color: #ff9900, $alpha: 0.3);
+    }
+    &:hover::before {
+        opacity: 0.3;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #ff9900;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
     &__background {
         background: url('../img/ingredients-card-background.png');
         background-size: cover;
     }
-
     &__title {
         position: relative;
         margin-bottom: 70px;
@@ -51,5 +70,14 @@
     &__image {
         display: flex;
         justify-content: space-between;
+        &:hover .ingredients-card__image-img:first-child {
+            transform: translateX(265%) rotate(360deg);
+        }
+        &:hover .ingredients-card__image-img:last-child {
+            transform: translateX(-265%) rotate(-360deg);
+        }
+    }
+    &__image-img {
+        transition: all 1s;
     }
 }
