@@ -192,7 +192,7 @@ img {
 }
 
 .food__background {
-  background: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/circle-pattern.png"), url("../img/food-background.jpg") no-repeat;
+  background: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/circle-pattern.png");
   background-size: cover, contain;
   -webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
           box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
@@ -318,7 +318,7 @@ img {
 }
 
 .menu__background {
-  background: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/menu-pattern.png"), url("../img/food-background.jpg") no-repeat;
+  background: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/menu-pattern.png");
   background-size: cover, contain;
   -webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
           box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
@@ -336,6 +336,11 @@ img {
   font-size: 36px;
   font-weight: 400;
   text-align: center;
+  cursor: pointer;
+}
+
+.menu-card__title:hover::after {
+  bottom: -45px;
 }
 
 .menu-card__title::after {
@@ -349,6 +354,16 @@ img {
   background: url("../img/decals/decal-section-title.png") no-repeat;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: initial;
+}
+
+.menu-card__content {
+  max-height: 300px;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .menu-card__item {
