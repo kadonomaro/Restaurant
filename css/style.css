@@ -84,6 +84,15 @@ img {
           transform: translateY(-3px);
 }
 
+.social_footer {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.social_footer .social__link {
+  color: #ffffff;
+}
+
 .header {
   color: #ffffff;
   text-align: center;
@@ -335,11 +344,15 @@ img {
 }
 
 .ingredients-card__image:hover .ingredients-card__image-img:first-child {
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
   -webkit-transform: translateX(265%) rotate(360deg);
           transform: translateX(265%) rotate(360deg);
 }
 
 .ingredients-card__image:hover .ingredients-card__image-img:last-child {
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
   -webkit-transform: translateX(-265%) rotate(-360deg);
           transform: translateX(-265%) rotate(-360deg);
 }
@@ -470,6 +483,7 @@ img {
 }
 
 .reviews-card {
+  position: relative;
   max-width: 770px;
   margin: 0 auto;
   padding: 80px 74px 100px;
@@ -481,6 +495,29 @@ img {
           box-sizing: border-box;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
+}
+
+.reviews-card:hover {
+  -webkit-box-shadow: 0 0 25px rgba(255, 153, 0, 0.3);
+          box-shadow: 0 0 25px rgba(255, 153, 0, 0.3);
+}
+
+.reviews-card:hover::before {
+  opacity: 0.5;
+}
+
+.reviews-card::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff9900;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .reviews-card__title {
@@ -532,7 +569,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 50px;
+  padding: 100px 200px;
 }
 
 .reservation__background {
@@ -544,6 +581,9 @@ img {
 
 .reservation__main {
   max-width: 50%;
+  padding: 0 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .reservation__side {
@@ -555,7 +595,7 @@ img {
 
 .reservation__title {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 63px;
   color: #cc9900;
   font-family: "Yeseva One", cursive;
   font-size: 36px;
@@ -580,16 +620,39 @@ img {
   margin-bottom: 40px;
   color: #4c4c4c;
   line-height: 24px;
+  text-align: center;
+}
+
+.reservation__desc p:first-child {
+  margin-bottom: 10px;
+}
+
+.reservation__image {
+  margin: 0 15px;
+}
+
+.reservation-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 .reservation-form__label {
   display: block;
+  max-width: 50%;
+  margin: 0 5px 25px;
 }
 
 .reservation-form__title {
   display: block;
+  margin-bottom: 10px;
   color: #c9a131;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
@@ -626,5 +689,80 @@ img {
   color: #7c7c7c;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-style: italic;
+}
+
+.reservation-form__button {
+  margin: 0 auto;
+  padding: 11px 60px;
+  color: #ffffff;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #c89f2d;
+  border: 1px solid #c89f2d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.reservation-form__button:hover {
+  background-color: #b38e28;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 230px 70px;
+  background-color: #191919;
+}
+
+.footer__column {
+  width: calc(33.3333% - 30px);
+  margin: 0 15px;
+}
+
+.footer__title {
+  position: relative;
+  margin-bottom: 60px;
+  color: #fefefe;
+  font-family: "Yeseva One", cursive;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.footer__title::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  display: block;
+  width: 199px;
+  height: 19px;
+  background: url("../img/decals/decal-title-block.png") no-repeat;
+  background-size: cover;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.footer__desc {
+  margin-bottom: 50px;
+}
+
+.footer__hours {
+  display: block;
+}
+
+.footer__address {
+  display: block;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

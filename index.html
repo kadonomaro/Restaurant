@@ -354,14 +354,57 @@
                         </label>
                         <label class="reservation-form__label">
                             <span class="reservation-form__title">Party number</span>
-                            <input class="reservation-form__input" type="number" name="reservation-number" placeholder="party number">
+                            <input class="reservation-form__input" type="number" name="reservation-number" placeholder="party number" min="0">
                         </label>
+
+                        <button class="reservation-form__button">Book now!</button>
                     </form>
                 </div>
 
             </div><!--reservation__inner-->
         </div><!--container-->
     </section><!--reservation-->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <div class="footer__column">
+                    <h3 class="footer__title">About Us</h3>
+                    <div class="footer__desc">
+                        <p>
+                            Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, 
+                            featuring breakfasts of fresh croissants and steaming bowls of café. 
+                            Lamda the best restaurant in town
+                            </p>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Opening Hours</h3>
+                    <div class="footer__desc">
+                        <span class="footer__hours"><b>Mon-Thu:</b> 7:00am-8:00pm</span>
+                        <span class="footer__hours"><b>Fri-Sun:</b> 7:00am-10:00pm</span>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Our Location</h3>
+                    <div class="footer__desc">
+                        <span class="footer__address">19th Paradise Street Sitia</span>
+                        <span class="footer__address">128 Meserole Avenue</span>
+                    </div>
+
+                    <div class="social social_footer">
+                        <a href="https://twitter.com" class="social__link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" class="social__link" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                        <a href="https://en-gb.facebook.com/" class="social__link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    
+                </div>
+
+            </div><!--footer__inner-->
+        </div><!--container-->
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

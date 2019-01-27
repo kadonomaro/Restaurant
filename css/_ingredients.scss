@@ -71,9 +71,11 @@
         display: flex;
         justify-content: space-between;
         &:hover .ingredients-card__image-img:first-child {
+            transform-origin: center right;
             transform: translateX(265%) rotate(360deg);
         }
         &:hover .ingredients-card__image-img:last-child {
+            transform-origin: center left;
             transform: translateX(-265%) rotate(-360deg);
         }
     }

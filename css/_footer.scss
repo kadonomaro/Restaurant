@@ -1,0 +1,45 @@
+.footer {
+    color: #ffffff;
+    text-align: center;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 230px 70px;
+        background-color: #191919;
+    }
+    &__column {
+        width: calc(33.3333% - 30px);
+        margin: 0 15px;
+    }
+    &__title {
+        position: relative;
+        margin-bottom: 60px;
+        color: #fefefe;
+        font-family: $font-title;
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 400;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            display: block;
+            width: 199px;
+            height: 19px;
+            background: url('../img/decals/decal-title-block.png') no-repeat;
+            background-size: cover;
+            transform: translate(-50%,0);
+        } 
+    }
+    &__desc {
+        margin-bottom: 50px;
+    }
+    &__hours {
+        display: block;
+    }
+    &__address {
+        display: block;
+        font-weight: 700;
+    }
+}

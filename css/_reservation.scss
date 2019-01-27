@@ -3,7 +3,7 @@
     &__inner {
         position: relative;
         display: flex;
-        padding: 100px 50px;
+        padding: 100px 200px;
     }
     &__background {
         background: 
@@ -14,6 +14,8 @@
     }
     &__main {
         max-width: 50%;
+        padding: 0 80px;
+        box-sizing: border-box;
     }
     &__side {
         display: flex;
@@ -21,7 +23,7 @@
     }
     &__title {
         position: relative;
-        margin-bottom: 70px;
+        margin-bottom: 63px;
         color: $color-title-accent;
         font-family: $font-title;
         font-size: 36px;
@@ -44,19 +46,33 @@
         margin-bottom: 40px;
         color: $color-text;
         line-height: 24px;
+        text-align: center;
+    }
+    &__desc p {
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+    &__image {
+        margin: 0 15px;
     }
 }
 
 
 .reservation-form {
-
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     &__label {
         display: block;
+        max-width: 50%;
+        margin: 0 5px 25px;
     }
     &__title {
         display: block;
+        margin-bottom: 10px;
         color: #c9a131;
-        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         font-size: 14px;
         font-weight: 700;
     }
@@ -71,7 +87,20 @@
             color: #7c7c7c;
             font-family: 'Open Sans', Arial, Helvetica, sans-serif;
             font-style: italic;
+        }  
+    }
+    &__button {
+        margin: 0 auto;
+        padding: 11px 60px;
+        color: #ffffff;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        background-color: #c89f2d;
+        border: 1px solid #c89f2d;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            background-color: darken($color: #c89f2d, $amount: 5%);
         }
-        
     }
 }
