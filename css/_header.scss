@@ -6,12 +6,6 @@
         padding-bottom: 140px;
     }
     &__background {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
         background: url('../img/header-background.jpg');
         background-size: cover;
     }
@@ -43,14 +37,13 @@
         &::after {
             content: '';
             position: absolute;
-            bottom: -55px;
+            bottom: -60px;
             left: 50%;
             display: block;
             width: 232px;
             height: 43px;
-            background: url('../img/decals/decal-heade-title.png') no-repeat;
+            background: url('../img/decals/decal-header-title.png') no-repeat;
             transform: translate(-50%,0);
-
         }
     }
     &__button {

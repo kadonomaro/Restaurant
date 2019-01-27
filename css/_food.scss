@@ -5,12 +5,6 @@
         padding: 55px 50px 30px;
     }
     &__background {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
         background: 
                     linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%),
                     url('../img/circle-pattern.png'),
@@ -25,11 +19,23 @@
         box-sizing: border-box;
     }
     &__title {
+        position: relative;
         margin-bottom: 65px;
         color: $color-title-accent;
         font-family: $font-title;
         font-size: 36px;
         font-weight: 400;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            display: block;
+            width: 232px;
+            height: 43px;
+            background: url('../img/decals/decal-section-title.png') no-repeat;
+            transform: translate(-50%,0);
+        }
     }
     &__desc {
         margin-bottom: 50px;

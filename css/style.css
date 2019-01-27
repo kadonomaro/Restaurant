@@ -20,6 +20,15 @@ img {
   padding: 0 20px;
 }
 
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .button {
   padding: 20px 52px;
   color: #ffffff;
@@ -82,12 +91,6 @@ img {
 }
 
 .header__background {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: url("../img/header-background.jpg");
   background-size: cover;
 }
@@ -122,12 +125,12 @@ img {
 .header__title::after {
   content: '';
   position: absolute;
-  bottom: -55px;
+  bottom: -60px;
   left: 50%;
   display: block;
   width: 232px;
   height: 43px;
-  background: url("../img/decals/decal-heade-title.png") no-repeat;
+  background: url("../img/decals/decal-header-title.png") no-repeat;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
@@ -187,12 +190,6 @@ img {
 }
 
 .food__background {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/circle-pattern.png"), url("../img/food-background.jpg") no-repeat;
   background-size: cover, contain;
   -webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
@@ -208,11 +205,25 @@ img {
 }
 
 .food__title {
+  position: relative;
   margin-bottom: 65px;
   color: #cc9900;
   font-family: "Yeseva One", cursive;
   font-size: 36px;
   font-weight: 400;
+}
+
+.food__title::after {
+  content: '';
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  display: block;
+  width: 232px;
+  height: 43px;
+  background: url("../img/decals/decal-section-title.png") no-repeat;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .food__desc {
@@ -223,5 +234,56 @@ img {
 
 .food__author-img {
   margin: 0 auto;
+}
+
+.ingredients__inner {
+  position: relative;
+  padding: 100px 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ingredients__background {
+  background: url("../img/ingredients-background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ingredients-card {
+  position: relative;
+  max-width: 570px;
+  margin-left: auto;
+  padding: 80px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ingredients-card__background {
+  background: url("../img/ingredients-card-background.png");
+  background-size: cover;
+}
+
+.ingredients-card__title {
+  margin-bottom: 70px;
+  color: #ffffff;
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.ingredients-card__desc {
+  margin-bottom: 70px;
+  color: #ffffff;
+  line-height: 24px;
+}
+
+.ingredients-card__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

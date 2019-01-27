@@ -1,0 +1,44 @@
+.ingredients {
+
+    &__inner {
+        position: relative;
+        padding: 100px 200px;
+        box-sizing: border-box;
+    }
+    &__background {
+        background: url('../img/ingredients-background.jpg') no-repeat;
+        background-size: cover;
+    }
+}
+
+.ingredients-card {
+    position: relative;
+    max-width: 570px;
+    margin-left: auto;
+    padding: 80px;
+    text-align: center;
+    
+    box-sizing: border-box;
+    &__background {
+        background: url('../img/ingredients-card-background.png');
+        background-size: cover;
+    }
+
+    &__title {
+        margin-bottom: 70px;
+        color: #ffffff;
+        font-family: $font-title;
+        font-size: 36px;
+        line-height: 34px;
+        font-weight: 400;       
+    }
+    &__desc {
+        margin-bottom: 70px;
+        color: #ffffff;
+        line-height: 24px;
+    }
+    &__image {
+        display: flex;
+        justify-content: space-between;
+    }
+}
