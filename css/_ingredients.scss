@@ -25,12 +25,24 @@
     }
 
     &__title {
+        position: relative;
         margin-bottom: 70px;
         color: #ffffff;
         font-family: $font-title;
         font-size: 36px;
         line-height: 34px;
-        font-weight: 400;       
+        font-weight: 400;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            display: block;
+            width: 232px;
+            height: 43px;
+            background: url('../img/decals/decal-title-block.png') no-repeat;
+            transform: translate(-50%,0);
+        }    
     }
     &__desc {
         margin-bottom: 70px;

@@ -186,7 +186,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 55px 50px 30px;
+  padding: 55px 150px 30px;
 }
 
 .food__background {
@@ -199,7 +199,7 @@ img {
 .food__main {
   text-align: center;
   max-width: 40%;
-  padding: 50px 90px;
+  padding: 50px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -264,12 +264,26 @@ img {
 }
 
 .ingredients-card__title {
+  position: relative;
   margin-bottom: 70px;
   color: #ffffff;
   font-family: "Yeseva One", cursive;
   font-size: 36px;
   line-height: 34px;
   font-weight: 400;
+}
+
+.ingredients-card__title::after {
+  content: '';
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  display: block;
+  width: 232px;
+  height: 43px;
+  background: url("../img/decals/decal-title-block.png") no-repeat;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .ingredients-card__desc {
@@ -285,5 +299,94 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.menu__inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 50px;
+}
+
+.menu__background {
+  background: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/menu-pattern.png"), url("../img/food-background.jpg") no-repeat;
+  background-size: cover, contain;
+  -webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+          box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+}
+
+.menu-card {
+  margin: 15px 80px;
+}
+
+.menu-card__title {
+  position: relative;
+  margin-bottom: 70px;
+  color: #cc9900;
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.menu-card__title::after {
+  content: '';
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  display: block;
+  width: 232px;
+  height: 43px;
+  background: url("../img/decals/decal-section-title.png") no-repeat;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.menu-card__item {
+  list-style: none;
+}
+
+.menu-card-item__name {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.menu-card-item__name::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: #c89f2d;
+  border: 1px solid #fbf7c0;
+  opacity: 0.3;
+}
+
+.menu-card-item__title {
+  margin-right: auto;
+  color: #cc9900;
+  font-family: "Yeseva One", cursive;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.menu-card-item__price {
+  color: #cc9900;
+  font-family: "Yeseva One", cursive;
+  font-weight: 700;
+}
+
+.menu-card-item__desc {
+  display: block;
+  margin-bottom: 35px;
 }
 /*# sourceMappingURL=style.css.map */
