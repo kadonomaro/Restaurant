@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1, h2, h3, h4, ul, p, body {
   margin: 0;
   padding: 0;
@@ -390,5 +391,71 @@ img {
 .menu-card-item__desc {
   display: block;
   margin-bottom: 35px;
+}
+
+.reviews__inner {
+  position: relative;
+  padding: 100px;
+}
+
+.reviews__background {
+  background: url("../img/reviews-background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.reviews-card {
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 80px 74px 100px;
+  color: #ffffff;
+  text-align: center;
+  background: url("../img/review-background.png") no-repeat;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reviews-card__title {
+  position: relative;
+  margin-bottom: 60px;
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.reviews-card__title::after {
+  content: '';
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  display: block;
+  width: 232px;
+  height: 43px;
+  background: url("../img/decals/decal-title-block.png") no-repeat;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.reviews-card__desc {
+  position: relative;
+  margin-bottom: 30px;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.reviews-card__desc::before {
+  content: '“';
+  position: absolute;
+  top: 10px;
+  left: -35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #f2f4f4;
+  font-size: 96px;
+  opacity: 0.5;
+}
+
+.reviews-card__author {
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
