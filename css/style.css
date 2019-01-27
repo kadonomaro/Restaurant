@@ -86,11 +86,30 @@ img {
 
 .social_footer {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .social_footer .social__link {
   color: #ffffff;
+}
+
+.payment {
+  font-family: "Font Awesome";
+  font-size: 24px;
+}
+
+.payment__link {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.payment__link:hover {
+  color: #e6e6e6;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .header {
@@ -720,7 +739,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 60px 230px 70px;
+  padding: 60px 230px 30px;
   background-color: #191919;
 }
 
