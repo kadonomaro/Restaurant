@@ -1,0 +1,31 @@
+.nav {
+    font-family: $font-menu;
+    font-size: 21px;
+    font-weight: 700;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        height: 100%;
+        margin-right: 50px;
+        list-style: none;
+    }
+    &__link {
+        display: block;
+        padding: 6px 13px;
+        color: #ffffff;
+        text-decoration: none;
+        
+        &:hover::before {
+            width: 100%;
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: rgba($color: #ffffff, $alpha: 0.7);
+            transition: width 0.3s;
+        }
+    }
+}
