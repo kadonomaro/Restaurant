@@ -1,0 +1,14 @@
+.social {
+    font-family: "Font Awesome";
+    font-size: 21px;
+    &__link {
+        display: inline-block;
+        margin-right: 15px;
+        color: #dab33e;
+        transition: all 0.3s;
+        &:hover {
+            color: darken($color: #dab33e, $amount: 10%);
+            transform: translateY(-3px);
+        }
+    }
+}

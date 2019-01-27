@@ -6,22 +6,23 @@
         display: flex;
     }
     &__item {
-        height: 100%;
         margin-right: 50px;
         list-style: none;
+        &:last-child {
+            margin-right: 20px;
+        }
     }
     &__link {
-        display: block;
-        padding: 6px 13px;
+        position: relative;
         color: #ffffff;
         text-decoration: none;
-        
         &:hover::before {
             width: 100%;
         }
         &::before {
             content: '';
-            display: block;
+            position: absolute;
+            top: -42px;
             width: 0;
             height: 3px;
             background-color: rgba($color: #ffffff, $alpha: 0.7);
