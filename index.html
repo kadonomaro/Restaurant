@@ -27,11 +27,11 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
                             <li class="nav__item"><a class="nav__link" href="#ingredients">Ingredients</a></li>
                             <li class="nav__item"><a class="nav__link" href="#menu">Menu</a></li>
                             <li class="nav__item"><a class="nav__link" href="#reviews">Reviews</a></li>
-                            <li class="nav__item"><a class="nav__link" href="#">Reservation</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#reservation">Reservation</a></li>
                         </ul>
                     </nav>
 
@@ -55,7 +55,7 @@
     </header>
 
 
-    <section class="food">
+    <section class="food" id="about">
 
         <div class="container">
 
@@ -309,10 +309,61 @@
                     <span class="reviews-card__author">- food inc, New York</span>
                 </div>
 
-            </div>
+            </div><!--reviews__inner-->
         </div><!--container-->
     </section><!--reviews-->
+
+
+    <section class="reservation" id="reservation">
+
+        <div class="container">
+
+            <div class="reservation__inner">
+                <div class="reservation__background background"></div>
+
+                <div class="reservation__side">
+                    <img class="reservation__image" src="img/reservation-1.jpg" alt="reservation">
+                    <img class="reservation__image" src="img/reservation-2.jpg" alt="reservation">
+                </div>
+
+                <div class="reservation__main">
+                    <h2 class="reservation__title">Just the right food</h2>
+                    <div class="reservation__desc">
+                        <p>
+                            If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                            Perfect materials and freshly baked food.
+                        </p>
+                        <p>
+                            Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
+                            Stop in today and check us out! Perfect materials and freshly baked food.
+                        </p>
+                    </div>
+
+                    <form action="#" class="reservation-form">
+                        <label class="reservation-form__label">
+                            <span class="reservation-form__title">Name</span>
+                            <input class="reservation-form__input" type="text" name="reservation-name" placeholder="your name*">
+                        </label>
+                        <label class="reservation-form__label">
+                            <span class="reservation-form__title">Email</span>
+                            <input class="reservation-form__input" type="email" name="reservation-email" placeholder="your email*">
+                        </label>
+                        <label class="reservation-form__label">
+                            <span class="reservation-form__title">Date</span>
+                            <input class="reservation-form__input" type="text"  name="reservation-date" placeholder="date*">
+                        </label>
+                        <label class="reservation-form__label">
+                            <span class="reservation-form__title">Party number</span>
+                            <input class="reservation-form__input" type="number" name="reservation-number" placeholder="party number">
+                        </label>
+                    </form>
+                </div>
+
+            </div><!--reservation__inner-->
+        </div><!--container-->
+    </section><!--reservation-->
 
     <script src="js/main.js"></script>
 </body>
 </html>
+
