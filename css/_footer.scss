@@ -3,13 +3,17 @@
     text-align: center;
     &__inner {
         display: flex;
-        justify-content: space-between;
-        padding: 60px 230px 30px;
+        justify-content: center;
+        padding: 60px 20px 30px;
         background-color: #191919;
     }
+    &__wrapper {
+        display: flex;
+        max-width: 1170px;
+        margin: 0 -15px;
+    }
     &__column {
-        width: calc(33.3333% - 30px);
-        margin: 0 15px;
+        @include flex-columns(12, 4, 15px);
     }
     &__title {
         position: relative;
@@ -41,5 +45,27 @@
     &__address {
         display: block;
         font-weight: 700;
+    }
+}
+
+
+
+/**Media**/
+@media screen and (max-width: 767px) {
+    .footer {
+        &__wrapper {
+            // align-items: center;
+            flex-direction: column;
+        }
+        &__column {
+            @include flex-columns(12, 12, 15px);
+            margin-bottom: 30px;
+        }
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__desc {
+            margin-bottom: 15px;
+        }
     }
 }

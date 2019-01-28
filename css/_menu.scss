@@ -115,5 +115,19 @@
             max-width: 100%;
         }
     }
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        &__inner {
+            padding: 40px 20px;
+        }
+        &__card {
+            margin: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
 
 }

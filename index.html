@@ -342,49 +342,53 @@
             <div class="reservation__inner">
                 <div class="reservation__background background"></div>
 
-                <div class="reservation__side">
-                    <div class="reservation__image">
-                        <img class="reservation__image-img" src="img/reservation-1.jpg" alt="reservation">
-                    </div>
-                    <div class="reservation__image">
-                        <img class="reservation__image-img" src="img/reservation-2.jpg" alt="reservation">
-                    </div>
-                </div>
+                <div class="reservation__wrapper">
+                    <div class="reservation__side">
+                            <div class="reservation__image">
+                                <img class="reservation__image-img" src="img/reservation-1.jpg" alt="reservation">
+                                <img class="reservation__image-img" src="img/reservation-2.jpg" alt="reservation">
+                            </div>
+                        </div>
+        
+                        <div class="reservation__main">
+                            <h2 class="reservation__title">Just the right food</h2>
+                            <div class="reservation__desc">
+                                <p>
+                                    If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
+                                    Perfect materials and freshly baked food.
+                                </p>
+                                <p>
+                                    Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
+                                    Stop in today and check us out! Perfect materials and freshly baked food.
+                                </p>
+                            </div>
+        
+                            <form action="#" class="reservation-form">
+                                <label class="reservation-form__label">
+                                    <span class="reservation-form__title">Name</span>
+                                    <input class="reservation-form__input" type="text" name="reservation-name" placeholder="your name*">
+                                </label>
+                                <label class="reservation-form__label">
+                                    <span class="reservation-form__title">Email</span>
+                                    <input class="reservation-form__input" type="email" name="reservation-email" placeholder="your email*">
+                                </label>
+                                <label class="reservation-form__label">
+                                    <span class="reservation-form__title">Date</span>
+                                    <input class="reservation-form__input" type="text"  name="reservation-date" placeholder="date*">
+                                </label>
+                                <label class="reservation-form__label">
+                                    <span class="reservation-form__title">Party number</span>
+                                    <input class="reservation-form__input" type="number" name="reservation-number" placeholder="party number" min="0">
+                                </label>
+                                <label class="reservation-form__label">
+                                    <button class="reservation-form__button">Book now!</button>
+                                </label>
 
-                <div class="reservation__main">
-                    <h2 class="reservation__title">Just the right food</h2>
-                    <div class="reservation__desc">
-                        <p>
-                            If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. 
-                            Perfect materials and freshly baked food.
-                        </p>
-                        <p>
-                            Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! 
-                            Stop in today and check us out! Perfect materials and freshly baked food.
-                        </p>
-                    </div>
+                            </form>
+                        </div>
+                </div><!--reservation__wrapper-->
 
-                    <form action="#" class="reservation-form">
-                        <label class="reservation-form__label">
-                            <span class="reservation-form__title">Name</span>
-                            <input class="reservation-form__input" type="text" name="reservation-name" placeholder="your name*">
-                        </label>
-                        <label class="reservation-form__label">
-                            <span class="reservation-form__title">Email</span>
-                            <input class="reservation-form__input" type="email" name="reservation-email" placeholder="your email*">
-                        </label>
-                        <label class="reservation-form__label">
-                            <span class="reservation-form__title">Date</span>
-                            <input class="reservation-form__input" type="text"  name="reservation-date" placeholder="date*">
-                        </label>
-                        <label class="reservation-form__label">
-                            <span class="reservation-form__title">Party number</span>
-                            <input class="reservation-form__input" type="number" name="reservation-number" placeholder="party number" min="0">
-                        </label>
 
-                        <button class="reservation-form__button">Book now!</button>
-                    </form>
-                </div>
 
             </div><!--reservation__inner-->
         </div><!--container-->
@@ -395,46 +399,50 @@
         <div class="container">
             <div class="footer__inner">
 
-                <div class="footer__column">
-                    <h3 class="footer__title">About Us</h3>
-                    <div class="footer__desc">
-                        <p>
-                            Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, 
-                            featuring breakfasts of fresh croissants and steaming bowls of café. 
-                            Lamda the best restaurant in town
-                        </p>
+                <div class="footer__wrapper">
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">About Us</h3>
+                        <div class="footer__desc">
+                            <p>
+                                Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, 
+                                featuring breakfasts of fresh croissants and steaming bowls of café. 
+                                Lamda the best restaurant in town
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="footer__column">
+                        <h3 class="footer__title">Opening Hours</h3>
+                        <div class="footer__desc">
+                            <span class="footer__hours"><b>Mon-Thu:</b> 7:00am-8:00pm</span>
+                            <span class="footer__hours"><b>Fri-Sun:</b> 7:00am-10:00pm</span>
+                        </div>
+    
+                        <div class="payment">
+                            <a href="#" class="payment__link"><i class="fab fa-cc-mastercard"></i></a>
+                            <a href="#" class="payment__link"><i class="fab fa-cc-paypal"></i></a>
+                            <a href="#" class="payment__link"><i class="fab fa-cc-visa"></i></a>
+                            <a href="#" class="payment__link"><i class="fab fa-cc-amex"></i></a>
+                        </div>
+                    </div>
+        
+                    <div class="footer__column">
+                        <h3 class="footer__title">Our Location</h3>
+                        <div class="footer__desc">
+                            <span class="footer__address">19th Paradise Street Sitia</span>
+                            <span class="footer__address">128 Meserole Avenue</span>
+                        </div>
+    
+                        <div class="social social_footer">
+                            <a href="https://twitter.com" class="social__link" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" class="social__link" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                            <a href="https://en-gb.facebook.com/" class="social__link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        
                     </div>
                 </div>
 
-                <div class="footer__column">
-                    <h3 class="footer__title">Opening Hours</h3>
-                    <div class="footer__desc">
-                        <span class="footer__hours"><b>Mon-Thu:</b> 7:00am-8:00pm</span>
-                        <span class="footer__hours"><b>Fri-Sun:</b> 7:00am-10:00pm</span>
-                    </div>
-
-                    <div class="payment">
-                        <a href="#" class="payment__link"><i class="fab fa-cc-mastercard"></i></a>
-                        <a href="#" class="payment__link"><i class="fab fa-cc-paypal"></i></a>
-                        <a href="#" class="payment__link"><i class="fab fa-cc-visa"></i></a>
-                        <a href="#" class="payment__link"><i class="fab fa-cc-amex"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer__column">
-                    <h3 class="footer__title">Our Location</h3>
-                    <div class="footer__desc">
-                        <span class="footer__address">19th Paradise Street Sitia</span>
-                        <span class="footer__address">128 Meserole Avenue</span>
-                    </div>
-
-                    <div class="social social_footer">
-                        <a href="https://twitter.com" class="social__link" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/" class="social__link" target="_blank"><i class="fab fa-youtube-square"></i></a>
-                        <a href="https://en-gb.facebook.com/" class="social__link" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                    
-                </div>
 
             </div><!--footer__inner-->
         </div><!--container-->

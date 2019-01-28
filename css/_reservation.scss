@@ -4,7 +4,6 @@
         position: relative;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
         padding: 100px 20px;
         box-sizing: border-box;
     }
@@ -15,16 +14,23 @@
         background-size: cover, contain;
         box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.05);
     }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1170px;
+        margin: 0 -15px;
+    }
     &__main {
-        max-width: calc(50% - 60px);
-        margin: 0 30px;
+        @include flex-columns(12, 6, 15px);
+        min-width: 500px;
         padding: 0 70px;
         box-sizing: border-box;
     }
     &__side {
+        @include flex-columns(12, 6, 15px);
+        min-width: 500px;
         display: flex;
-        max-width: calc(50% - 60px);
-        margin: 0 30px;
+        justify-content: space-between;
     }
     &__title {
         position: relative;
@@ -59,23 +65,26 @@
         }
     }
     &__image {
-        margin: 0 15px;
+        display: flex;
+        align-items: flex-start;
+        margin: 0 -15px;
     }
     &__image-img {
-
+        margin: 0 15px;
     }
 }
 
 
 .reservation-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     &__label {
         display: block;
         max-width: 50%;
-        margin: 0 5px 15px;
+        margin-bottom: 15px;
+        margin-right: 5px;
     }
     &__title {
         display: block;
@@ -85,8 +94,10 @@
         font-weight: 700;
     }
     &__input {
-        padding: 11px 14px 8px;
+        max-width: 200px;
+        padding: 11px 5px 8px;
         border: 1px solid #c8c6c6;
+        box-sizing: border-box;
         &:focus {
             border: 1px solid #c89f2d;
             outline: 0;
@@ -117,10 +128,18 @@
 
 
 /**Media**/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+    .reservation {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
     .reservation {
         &__inner {
-            flex-direction: column;
+            padding: 50px 20px;
         }
     }
 }

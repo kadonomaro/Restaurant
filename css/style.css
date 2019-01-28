@@ -21,7 +21,6 @@ img {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .background {
@@ -677,6 +676,15 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu__inner {
+    padding: 40px 20px;
+  }
+  .menu__card {
+    margin: 15px;
+  }
+}
+
 .reviews__inner {
   position: relative;
   padding: 100px;
@@ -808,8 +816,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 100px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -822,20 +828,41 @@ img {
           box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.05);
 }
 
+.reservation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1170px;
+  margin: 0 -15px;
+}
+
 .reservation__main {
-  max-width: calc(50% - 60px);
-  margin: 0 30px;
+  -ms-flex-preferred-size: calc((100% / 12 * 6) - (15px * 2));
+      flex-basis: calc((100% / 12 * 6) - (15px * 2));
+  max-width: calc((100% / 12 * 6) - (15px * 2));
+  margin-right: 15px;
+  margin-left: 15px;
+  min-width: 500px;
   padding: 0 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .reservation__side {
+  -ms-flex-preferred-size: calc((100% / 12 * 6) - (15px * 2));
+      flex-basis: calc((100% / 12 * 6) - (15px * 2));
+  max-width: calc((100% / 12 * 6) - (15px * 2));
+  margin-right: 15px;
+  margin-left: 15px;
+  min-width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: calc(50% - 60px);
-  margin: 0 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .reservation__title {
@@ -873,6 +900,16 @@ img {
 }
 
 .reservation__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 -15px;
+}
+
+.reservation__image-img {
   margin: 0 15px;
 }
 
@@ -880,9 +917,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -891,7 +928,8 @@ img {
 .reservation-form__label {
   display: block;
   max-width: 50%;
-  margin: 0 5px 15px;
+  margin-bottom: 15px;
+  margin-right: 5px;
 }
 
 .reservation-form__title {
@@ -903,8 +941,11 @@ img {
 }
 
 .reservation-form__input {
-  padding: 11px 14px 8px;
+  max-width: 200px;
+  padding: 11px 5px 8px;
   border: 1px solid #c8c6c6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .reservation-form__input:focus {
@@ -956,12 +997,17 @@ img {
 }
 
 /**Media**/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
+  .reservation__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .reservation__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    padding: 50px 20px;
   }
 }
 
@@ -974,16 +1020,27 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 60px 230px 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 20px 30px;
   background-color: #191919;
 }
 
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  margin: 0 -15px;
+}
+
 .footer__column {
-  width: calc(33.3333% - 30px);
-  margin: 0 15px;
+  -ms-flex-preferred-size: calc((100% / 12 * 4) - (15px * 2));
+      flex-basis: calc((100% / 12 * 4) - (15px * 2));
+  max-width: calc((100% / 12 * 4) - (15px * 2));
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .footer__title {
@@ -1021,5 +1078,29 @@ img {
 .footer__address {
   display: block;
   font-weight: 700;
+}
+
+/**Media**/
+@media screen and (max-width: 767px) {
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__column {
+    -ms-flex-preferred-size: calc((100% / 12 * 12) - (15px * 2));
+        flex-basis: calc((100% / 12 * 12) - (15px * 2));
+    max-width: calc((100% / 12 * 12) - (15px * 2));
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+  .footer__title {
+    margin-bottom: 40px;
+  }
+  .footer__desc {
+    margin-bottom: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
