@@ -1,0 +1,6 @@
+@mixin flex-columns($colCount: 12, $currentColCount: 4, $margin: 0px) {
+    flex-basis: calc((100% / #{$colCount} * #{$currentColCount}) - (#{$margin} * 2));
+    max-width: calc((100% / #{$colCount} * #{$currentColCount}) - (#{$margin} * 2));
+    margin-right: $margin;
+    margin-left: $margin;
+} 
