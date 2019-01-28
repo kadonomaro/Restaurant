@@ -21,3 +21,18 @@
         color: #ffffff;
     }
 }
+
+
+
+
+@media screen and (max-width: 767px) {
+    .social {
+        &__link {
+            color: #ffffff;
+            &:hover {
+                color: darken($color: #ffffff, $amount: 10%);
+                transform: translateY(-3px);
+            }
+        }
+    }
+}

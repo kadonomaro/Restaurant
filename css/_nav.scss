@@ -53,11 +53,11 @@
             }
         }
         &__link {
-            display: block;
-            margin: 0 auto; 
+            font-size: 28px;
             &::before {
                 top: initial;
                 bottom: -5px;
+                left: 0;
             }
         }
     }

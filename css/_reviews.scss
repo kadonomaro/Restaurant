@@ -73,7 +73,6 @@
             color: #f2f4f4;
             font-size: 96px;
             opacity: 0.5;
-
         }
     }
     &__author {
@@ -85,14 +84,35 @@
 @media screen and (max-width: 767px) {
     .reviews {
         &__inner {
-            padding: 50px;
+            padding: 50px 20px;
+        }
+        &__background {
+            background-position: center;
         }
     }
 
     .reviews-card {
-        padding: 40px 40px 50px;
+        padding: 40px 20px 50px;
         &__desc {
             line-height: 32px;
+            &::before {
+                top: 0;
+                left: -15px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: #f2f4f4;
+                font-size: 40px;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .reviews-card {
+        &__desc {
+            font-size: 18px;
+            line-height: 28px;
         }
     }
 }
