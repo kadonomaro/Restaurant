@@ -113,13 +113,14 @@ img {
 }
 
 .header {
+  position: relative;
   color: #ffffff;
   text-align: center;
 }
 
 .header__inner {
   position: relative;
-  padding-bottom: 140px;
+  padding: 0 20px 140px;
 }
 
 .header__background {
@@ -131,6 +132,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -139,17 +145,24 @@ img {
 }
 
 .header__logo {
-  margin-left: 170px;
-  margin-right: 240px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  margin: 10px 20px;
+}
+
+.header__social {
+  margin-right: auto;
 }
 
 .header__title {
   position: relative;
-  margin-bottom: 110px;
-  padding: 0 320px;
+  max-width: 960px;
+  margin: 0 auto 105px;
   font-family: "Yeseva One", cursive;
   font-size: 90px;
-  line-height: 1.2;
+  line-height: 1.27;
   font-weight: 400;
   text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
   opacity: 0.92;
@@ -158,7 +171,7 @@ img {
 .header__title::after {
   content: '';
   position: absolute;
-  bottom: -60px;
+  bottom: -70px;
   left: 50%;
   display: block;
   width: 232px;
@@ -170,6 +183,33 @@ img {
 
 .header__button {
   margin: 0 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__background {
+    background-position: center;
+  }
+  .header__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__nav {
+    margin-top: 34px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .header__logo {
+    margin: 10px 0;
+  }
+  .header__social {
+    margin: 0;
+  }
 }
 
 .nav {
@@ -212,6 +252,32 @@ img {
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav__item {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: block;
+  }
+  .nav__item {
+    margin: 10px 0;
+  }
+  .nav__item:last-child {
+    margin: 0;
+  }
+  .nav__link {
+    display: block;
+    margin: 0 auto;
+  }
+  .nav__link::before {
+    top: initial;
+    bottom: -5px;
+  }
 }
 
 .food__inner {
@@ -625,6 +691,18 @@ img {
 
 .reviews-card__author {
   font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__inner {
+    padding: 50px;
+  }
+  .reviews-card {
+    padding: 40px 40px 50px;
+  }
+  .reviews-card__desc {
+    line-height: 32px;
+  }
 }
 
 .reservation__inner {

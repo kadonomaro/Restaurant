@@ -1,9 +1,10 @@
 .header {
+    position: relative;
     color: #ffffff;
     text-align: center;
     &__inner {
         position: relative;
-        padding-bottom: 140px;
+        padding: 0 20px 140px;
     }
     &__background {
         background: url('../img/header-background.jpg');
@@ -11,34 +12,35 @@
     }
     &__top {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 110px;
         padding: 8px 0;
     }
     &__logo {
-        margin-left: 170px;
-        margin-right: 240px;
+        margin: 0 auto;
     }
     &__nav {
-
+        margin: 10px 20px;
     }
     &__social {
-
+        margin-right: auto;
     }
     &__title {
         position: relative;
-        margin-bottom: 110px;
-        padding: 0 320px;
+        max-width: 960px;
+        margin: 0 auto 105px;
         font-family: $font-title;
         font-size: 90px;
-        line-height: 1.2;
+        line-height: 1.27;
         font-weight: 400;
         text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
         opacity: 0.92;
         &::after {
             content: '';
             position: absolute;
-            bottom: -60px;
+            bottom: -70px;
             left: 50%;
             display: block;
             width: 232px;
@@ -49,5 +51,29 @@
     }
     &__button {
         margin: 0 15px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .header {
+        &__background {
+            background-position: center;
+        }
+        &__top {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__nav {
+            margin-top: 34px;
+            order: -1;
+        }
+        &__logo {
+            margin: 10px 0;
+        }
+        &__social {
+            margin: 0;
+        }
     }
 }

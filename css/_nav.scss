@@ -30,3 +30,35 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+    .nav {
+        &__item {
+            margin-right: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav {
+        &__list {
+            display: block;
+        }
+        &__item {
+            margin: 10px 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        &__link {
+            display: block;
+            margin: 0 auto; 
+            &::before {
+                top: initial;
+                bottom: -5px;
+            }
+        }
+    }
+}
