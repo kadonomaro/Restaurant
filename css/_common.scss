@@ -12,6 +12,10 @@ img {
     max-width: 100%;
 }
 
+.all-wrapper {
+    overflow: hidden;
+}
+
 .page {
     font-size: 16px;
     font-family: $font-text-default;
@@ -32,7 +36,3 @@ img {
     left: 0;
     right: 0;
 }
-
-// * {
-//     outline: 1px dashed green;
-// }

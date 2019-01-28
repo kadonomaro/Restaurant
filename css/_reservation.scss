@@ -16,7 +16,6 @@
     }
     &__wrapper {
         display: flex;
-        flex-wrap: wrap;
         max-width: 1170px;
         margin: 0 -15px;
     }
@@ -30,7 +29,7 @@
         @include flex-columns(12, 6, 15px);
         min-width: 500px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     &__title {
         position: relative;
@@ -51,7 +50,6 @@
             background: url('../img/decals/decal-section-title.png') no-repeat;
             transform: translate(-50%,0);
         }
-
     }
     &__desc {
         margin-bottom: 40px;
@@ -65,12 +63,9 @@
         }
     }
     &__image {
-        display: flex;
-        align-items: flex-start;
-        margin: 0 -15px;
-    }
-    &__image-img {
-        margin: 0 15px;
+        &:first-child {
+            margin-right: 30px;
+        }
     }
 }
 
@@ -131,7 +126,25 @@
 @media screen and (max-width: 1200px) {
     .reservation {
         &__wrapper {
-            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__main {
+            min-width: 300px;
+            padding: 0;
+        }
+        &__side {
+            @include flex-columns(12, 12, 15px);
+            min-width: 300px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .reservation-form {
+        &__label {
+            max-width: 100%;
         }
     }
 }

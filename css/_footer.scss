@@ -54,11 +54,11 @@
 @media screen and (max-width: 767px) {
     .footer {
         &__wrapper {
-            // align-items: center;
+            align-items: center;
             flex-direction: column;
         }
         &__column {
-            @include flex-columns(12, 12, 15px);
+            @include flex-columns(12, 8, 15px);
             margin-bottom: 30px;
         }
         &__title {
@@ -66,6 +66,14 @@
         }
         &__desc {
             margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer {
+        &__column {
+            @include flex-columns(12, 12, 15px);
         }
     }
 }
