@@ -83,3 +83,16 @@
         transition: all 1s;
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    .ingredients {
+        &__inner {
+            padding: 100px 20px;
+        }
+    }
+
+    .ingredients-card {
+        margin: 0 auto;
+    }
+}

@@ -2,7 +2,8 @@
     &__inner {
         position: relative;
         display: flex;
-        padding: 55px 260px 30px;
+        align-items: center;
+        padding: 55px 16% 30px;
     }
     &__background {
         background: 
@@ -54,6 +55,29 @@
     }
     &__photo {
 
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .food {
+        &__inner {
+            padding: 55px 20px 30px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .food {
+        &__inner {
+            flex-direction: column;
+        }
+        &__main {
+            max-width: 100%;
+            margin: 0 auto;
+        }
     }
 
 }

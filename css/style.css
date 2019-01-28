@@ -219,7 +219,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 55px 260px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 55px 16% 30px;
 }
 
 .food__background {
@@ -268,6 +271,25 @@ img {
 
 .food__author-img {
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .food__inner {
+    padding: 55px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .food__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .food__main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .ingredients__inner {
@@ -381,6 +403,15 @@ img {
   transition: all 1s;
 }
 
+@media screen and (max-width: 1024px) {
+  .ingredients__inner {
+    padding: 100px 20px;
+  }
+  .ingredients-card {
+    margin: 0 auto;
+  }
+}
+
 .menu__inner {
   position: relative;
   display: -webkit-box;
@@ -401,7 +432,8 @@ img {
           box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
 }
 
-.menu-card {
+.menu__card {
+  max-width: calc(50% - 200px);
   margin: 15px 100px;
 }
 
@@ -489,6 +521,18 @@ img {
   display: block;
   margin-bottom: 35px;
   color: #4c4c4c;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__card {
+    max-width: 100%;
+  }
 }
 
 .reviews__inner {
