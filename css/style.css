@@ -366,11 +366,11 @@ img {
 .food__title::after {
   content: '';
   position: absolute;
-  bottom: -55px;
+  bottom: -40px;
   left: 50%;
   display: block;
-  width: 232px;
-  height: 43px;
+  width: 247px;
+  height: 24px;
   background: url("../img/decals/decal-section-title.png") no-repeat;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -472,11 +472,11 @@ img {
 .ingredients-card__title::after {
   content: '';
   position: absolute;
-  bottom: -55px;
+  bottom: -40px;
   left: 50%;
   display: block;
-  width: 232px;
-  height: 43px;
+  width: 247px;
+  height: 24px;
   background: url("../img/decals/decal-title-block.png") no-repeat;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -605,11 +605,11 @@ img {
 .menu-card__title::after {
   content: '';
   position: absolute;
-  bottom: -55px;
+  bottom: -40px;
   left: 50%;
   display: block;
-  width: 232px;
-  height: 43px;
+  width: 247px;
+  height: 24px;
   background: url("../img/decals/decal-section-title.png") no-repeat;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -748,11 +748,11 @@ img {
 .reviews-card__title::after {
   content: '';
   position: absolute;
-  bottom: -55px;
+  bottom: -40px;
   left: 50%;
   display: block;
-  width: 232px;
-  height: 43px;
+  width: 247px;
+  height: 24px;
   background: url("../img/decals/decal-title-block.png") no-repeat;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -880,11 +880,11 @@ img {
 .reservation__title::after {
   content: '';
   position: absolute;
-  bottom: -60px;
+  bottom: -35px;
   left: 50%;
   display: block;
-  width: 232px;
-  height: 43px;
+  width: 247px;
+  height: 24px;
   background: url("../img/decals/decal-section-title.png") no-repeat;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
