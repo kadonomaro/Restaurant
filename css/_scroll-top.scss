@@ -1,0 +1,29 @@
+.scroll-top {
+    position: fixed;
+    z-index: 99;
+    right: 50%;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: $color-title-accent;
+    border-radius: 5px;
+    transform: translateX(50%);
+    transition: opacity 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    &:hover {
+        opacity: 1;
+    }
+    &__link {
+        display: block;
+        font-size: 20px;
+        line-height: 40px;
+        color: #ffffff;
+    }
+}
+
+.scroll-top_active {
+    visibility: visible;
+    opacity: 0.3;
+}
