@@ -617,7 +617,7 @@ img {
 
 .menu-card__title {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   color: #cc9900;
   font-family: "Yeseva One", cursive;
   font-size: 36px;
@@ -664,7 +664,7 @@ img {
 
 .menu-card-item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 10px;
 }
 
