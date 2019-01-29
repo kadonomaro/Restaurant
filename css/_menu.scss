@@ -23,7 +23,6 @@
 
 
 .menu-card {
-    
     &__title {
         position: relative;
         margin-bottom: 70px;
@@ -68,7 +67,9 @@
 
 
 .menu-card-item {
-
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px;
     &__name {
         position: relative;
         display: flex;
@@ -99,8 +100,23 @@
     }
     &__desc {
         display: block;
-        margin-bottom: 35px;
         color: $color-text;
+    }
+}
+
+.menu-card-item_special {
+    border: 1px solid rgba($color: #c89f2d, $alpha: 0.3);
+    &::after {
+        content: 'Special';
+        position: absolute;
+        top: 0;
+        right: -1px;
+        padding: 6px 13px 4px;
+        color: #f8fafa;
+        font-size: 14px;
+        line-height: 12px;
+        background: url('../img/decals/special.png');
+        transform: translateY(-100%);
     }
 }
 
