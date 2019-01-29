@@ -137,7 +137,7 @@ img {
   height: 40px;
   text-align: center;
   background-color: #cc9900;
-  border-radius: 5px;
+  border-radius: 3px;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
   -webkit-transition: opacity 1s;
