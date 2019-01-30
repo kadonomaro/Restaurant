@@ -28,6 +28,17 @@ window.addEventListener('load', function () {
         }
     });
 
-    
+    //Плавная прокрутка
+    // let logo = document.querySelector('.logo');
+    // let menu = document.querySelector('.menu');
+
+    // logo.style.cursor = "pointer";
+    // logo.addEventListener('click', function () {
+    //     window.scrollTo({
+    //         top: menu.offsetTop,
+    //         behavior: "smooth"
+    //     });
+        
+    // });
 
 });

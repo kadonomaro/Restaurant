@@ -532,8 +532,13 @@ img {
 }
 
 .ingredients-card__image:hover .ingredients-card__image-img:first-child {
-  -webkit-transform: translateX(265%) rotate(360deg);
-          transform: translateX(265%) rotate(360deg);
+  -webkit-transform: translateX(132.5%) rotate(360deg);
+          transform: translateX(132.5%) rotate(360deg);
+}
+
+.ingredients-card__image:hover .ingredients-card__image-img:nth-child(2) {
+  -webkit-transform: translateX(132.5%) rotate(360deg);
+          transform: translateX(132.5%) rotate(360deg);
 }
 
 .ingredients-card__image:hover .ingredients-card__image-img:last-child {
