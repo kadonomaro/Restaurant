@@ -11,8 +11,7 @@
         background: 
                     linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%),
                     url('../img/menu-pattern.png');
-        background-size: cover, contain;
-
+        background-size: cover, cover;
         box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
     }
     &__card {
@@ -37,7 +36,7 @@
             text-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.3);
         }
         &:hover::after {
-            bottom: -45px;
+            bottom: -35px;
         }
         &::after {
             content: '';
@@ -61,6 +60,7 @@
 
     }
     &__item {
+        margin-bottom: 15px;
         list-style: none;
     }
 }
@@ -68,7 +68,6 @@
 
 .menu-card-item {
     position: relative;
-    margin-bottom: 15px;
     padding: 10px;
     &__name {
         position: relative;
@@ -96,6 +95,7 @@
     &__price {
         color: $color-title-accent;
         font-family: $font-title;
+        font-size: 21px;
         font-weight: 700;
     }
     &__desc {

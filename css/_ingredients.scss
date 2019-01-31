@@ -73,7 +73,7 @@
         &:hover .ingredients-card__image-img:first-child {
             transform: translateX(132.5%) rotate(360deg);
         }
-        &:hover .ingredients-card__image-img:nth-child(2) {
+        &:hover .ingredients-card__image-img:nth-child(even) {
             transform: translateX(132.5%) rotate(360deg);
         }
         &:hover .ingredients-card__image-img:last-child {
@@ -118,6 +118,9 @@
             align-items: center;
             &:hover .ingredients-card__image-img:first-child {
                 transform: translate(0) rotate(0);
+            }
+            &:hover .ingredients-card__image-img:nth-child(even) {
+                transform: translateX(0) rotate(0);
             }
             &:hover .ingredients-card__image-img:last-child {
                 transform: translate(0) rotate(0);

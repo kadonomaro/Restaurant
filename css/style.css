@@ -536,7 +536,7 @@ img {
           transform: translateX(132.5%) rotate(360deg);
 }
 
-.ingredients-card__image:hover .ingredients-card__image-img:nth-child(2) {
+.ingredients-card__image:hover .ingredients-card__image-img:nth-child(even) {
   -webkit-transform: translateX(132.5%) rotate(360deg);
           transform: translateX(132.5%) rotate(360deg);
 }
@@ -586,6 +586,10 @@ img {
     -webkit-transform: translate(0) rotate(0);
             transform: translate(0) rotate(0);
   }
+  .ingredients-card__image:hover .ingredients-card__image-img:nth-child(even) {
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0);
+  }
   .ingredients-card__image:hover .ingredients-card__image-img:last-child {
     -webkit-transform: translate(0) rotate(0);
             transform: translate(0) rotate(0);
@@ -610,7 +614,7 @@ img {
 
 .menu__background {
   background: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/menu-pattern.png");
-  background-size: cover, contain;
+  background-size: cover, cover;
   -webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
           box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
 }
@@ -638,7 +642,7 @@ img {
 }
 
 .menu-card__title:hover::after {
-  bottom: -45px;
+  bottom: -35px;
 }
 
 .menu-card__title::after {
@@ -664,12 +668,12 @@ img {
 }
 
 .menu-card__item {
+  margin-bottom: 15px;
   list-style: none;
 }
 
 .menu-card-item {
   position: relative;
-  margin-bottom: 15px;
   padding: 10px;
 }
 
@@ -703,6 +707,7 @@ img {
 .menu-card-item__price {
   color: #cc9900;
   font-family: "Yeseva One", cursive;
+  font-size: 21px;
   font-weight: 700;
 }
 
