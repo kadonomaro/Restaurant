@@ -6,7 +6,6 @@ window.addEventListener('load', function () {
     for (let i = 0; i < menuBtn.length; i++) {
         menuContent[i].style.maxHeight = menuContent[i].scrollHeight + 'px';
         menuBtn[i].addEventListener('click', function () {
-            console.dir(menuContent[i]);
             
             if (menuContent[i].clientHeight === menuContent[i].scrollHeight) {
                 menuContent[i].style.maxHeight = 0 + 'px';
@@ -14,7 +13,7 @@ window.addEventListener('load', function () {
             else {
                 menuContent[i].style.maxHeight = menuContent[i].scrollHeight + 'px';
             }
-        })
+        });
     }
 
     //Добавление появления кнопки для скролла в начало страницы

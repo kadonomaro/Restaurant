@@ -614,7 +614,6 @@ img {
 
 .menu__background {
   background: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%), url("../img/menu-pattern.png");
-  background-size: cover, cover;
   -webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
           box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
 }
@@ -667,9 +666,12 @@ img {
   transition: all 0.7s;
 }
 
+.menu-card__list {
+  list-style: none;
+}
+
 .menu-card__item {
   margin-bottom: 15px;
-  list-style: none;
 }
 
 .menu-card-item {
